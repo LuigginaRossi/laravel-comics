@@ -29,10 +29,18 @@
     // margin-bottom: -200px;
 }
 
+ul{
+    margin: 0;
+}
+
 li{
     list-style: none;
 }
 
 .bg-second-footer{
     background-color: #303030 ;
+}
+
+.card{
+    height: 100%;
 }
