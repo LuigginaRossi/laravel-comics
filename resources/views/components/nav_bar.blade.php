@@ -1,13 +1,12 @@
-<nav class=" d-flex justify-content-between">
+<nav class=" d-flex justify-content-between align-items-center">
     {{-- logo --}}
-    <img src="" alt="logoDC">
+    <img class="p-3 logo" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="logoDC">
     {{-- link --}}
-    <ul class="list-group list-group-horizontal">
-        <li class="list-group-item"><a class="btn btn-link" data-mdb-ripple-color="dark">Link 1</a></li>
-        <li class="list-group-item"><a class="btn btn-link" data-mdb-ripple-color="dark">Link 2</a></li>
-        <li class="list-group-item"><a class="btn btn-link" data-mdb-ripple-color="dark">Link 3</a></li>
-        <li class="list-group-item"><a class="btn btn-link" data-mdb-ripple-color="dark">Link 4</a></li>
-        <li class="list-group-item"><a class="btn btn-link" data-mdb-ripple-color="dark">Link 5</a></li>
+    <ul class="d-flex">
+        @foreach ($navbar as $itemNav)
+            <li><a class="btn btn-link" data-mdb-ripple-color="dark">{{$itemNav}}</a></li>
+        @endforeach
+     
     </ul>
     {{-- search --}}
     <li class="list-group-item"><a class="btn btn-link" data-mdb-ripple-color="dark">Search</a></li>

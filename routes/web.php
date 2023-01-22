@@ -15,7 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
      $posterComics= config('tempDB');
+     $shopList= config('shopList');
+     $footerList= config('footerList');
+     $navbar= config('navbar');
+     $secondFooter= config('secondFooter');
     return view('index', [
         "posterComics" =>$posterComics,
+        "shopList"=>$shopList,
+        "footerList"=>$footerList,
+        "navbar"=>$navbar,
+        "secondFooter"=>$secondFooter,
     ]);
 });

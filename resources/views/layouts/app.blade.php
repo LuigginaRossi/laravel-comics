@@ -15,7 +15,7 @@
 
 </head>
 <body>
-
+    
     {{-- nav-bar --}}
     @include('components.nav_bar')
 
@@ -25,11 +25,14 @@
     {{-- main --}}
     @include('components.main')
 
+    
     {{-- shop --}}
     @include('components.shop')
 
     {{-- footer --}}
     @include('components.footer')
 
+    {{-- second Footer --}}
+    @include('components.second_footer')
 </body>
 </html>

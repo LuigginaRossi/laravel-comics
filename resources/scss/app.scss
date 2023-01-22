@@ -1,2 +1,38 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
 
+.logo{
+    width:100px;
+}
+.thumb-bg {
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 400px;
+}
+.bg-shop{
+    background: #0282f9;
+}
+
+.shop-img {
+    display: block;
+    width: 50px;
+}
+
+.bg-footer {
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-footer {
+    margin-top: -100px;
+    // margin-bottom: -200px;
+}
+
+li{
+    list-style: none;
+}
+
+.bg-second-footer{
+    background-color: #303030 ;
+}
