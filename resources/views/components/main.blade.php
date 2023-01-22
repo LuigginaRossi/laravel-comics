@@ -1,3 +1,4 @@
+@section('main-posts')
 <main class="bg-dark">
     {{-- cards-container --}}
     <div class="container">
@@ -8,6 +9,6 @@
             <button class="btn btn-primary">LOAD MORE</button>
         </div>
     </div>
-        
 
 </main>
+@endsection

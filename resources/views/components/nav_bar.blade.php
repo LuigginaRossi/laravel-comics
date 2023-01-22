@@ -1,10 +1,13 @@
 <nav class=" d-flex justify-content-between align-items-center">
     {{-- logo --}}
-    <img class="p-3 logo" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="logoDC">
+    <a href="{{route('home')}}">
+        <img class="p-3 logo" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="logoDC">
+    </a>
+    
     {{-- link --}}
     <ul class="d-flex">
         @foreach ($navbar as $itemNav)
-            <li><a class="btn btn-link" data-mdb-ripple-color="dark">{{$itemNav}}</a></li>
+            <li><a href="{{route('games')}}" class="btn btn-link" data-mdb-ripple-color="dark">{{$itemNav}}</a></li>
         @endforeach
      
     </ul>

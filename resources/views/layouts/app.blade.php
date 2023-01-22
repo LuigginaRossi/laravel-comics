@@ -23,8 +23,9 @@
     @include('components.thumb')
 
     {{-- main --}}
-    @include('components.main')
-
+    {{-- @include('components.main') --}}
+    @yield('main-posts')
+    @yield('main-games')
     
     {{-- shop --}}
     @include('components.shop')
